@@ -1,8 +1,8 @@
-import "../assets/css/styles.css";
+import "../../assets/css/styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../assets/css/LineIcons.3.0.css";
+import "../../assets/css/LineIcons.3.0.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import "../assets/js/datatables-simple-demo.js";
+import "../../assets/js/datatables-simple-demo.js";
 import { Link } from "react-router-dom";
 
 
@@ -13,7 +13,7 @@ function Sidebar({}){
                 <div className="sb-sidenav-menu">
                     <div className="nav">
                         <div className="sb-sidenav-menu-heading" style={{textAlign:'left', color:'lightgray'}}>고객관리</div>
-                        <Link className="nav-link" to="/customerlist">
+                        <Link className="nav-link" to="/admin/customerlist">
                             <div className="sb-nav-link-icon"><i className="fas fa-address-book"></i></div>
                             고객별 구매내역
                         </Link>

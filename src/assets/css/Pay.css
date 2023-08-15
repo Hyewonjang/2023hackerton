@@ -1,0 +1,278 @@
+.Pay-header {
+    height: 8%;
+    margin-top: 2%;
+    font-size: 50px;
+    color: black;
+    text-align: left;
+    margin-left: 5%;
+    cursor: pointer;
+  }
+
+.Pay-topbox {
+    background-color: #2E4E31;
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.Pay-back {
+    margin-top: 2%;
+    text-align: left;
+    cursor: pointer;
+    margin-right: 90%;
+    margin-left: 5%;
+    border: 1px solid #A3A3A3;
+    background-color: #B2C3B2;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 15px;
+}
+
+.Pay-amount {
+    
+}
+
+.Pay-amount-title {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.Pay-amount-box {
+    border: 1px solid #A3A3A3;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    display: flex;
+    padding-left: 5%;
+    margin-top: 2%;
+}
+
+.Pay-amount-input {
+    width: 90%;
+    height: 70%;
+    border-style: none;
+    backface-visibility: hidden;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.Pay-amount-won {
+    font-size: 30px;
+    text-align: right;
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+.Pay-boundary {
+    height: 10%;
+    margin-top: 2%;
+    border: 15px solid #F5F5F5;
+}
+
+.Pay-method {
+
+}
+
+.Pay-method-title {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 1%;
+    font-weight: bold;
+}
+
+.Pay-method-ubuttons {
+    margin-top: 1%;
+    align-items: center;
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: space-between;
+}
+
+.Pay-method-card {
+    font-size: 30px;
+    font-weight: 500;
+    border: 1px solid #A3A3A3;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: white;
+    width: 45%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Pay-method-nobook {
+    font-size: 30px;
+    font-weight: 500;
+    border: 1px solid #A3A3A3;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: white;
+    width: 45%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Pay-method-dbuttons {
+    margin-top: 2%;
+    align-items: center;
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: space-between;
+}
+
+.Pay-method-naver{
+    font-size: 30px;
+    font-weight: 500;
+    border: 1px solid #A3A3A3;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: white;
+    width: 45%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Pay-method-kakao {
+    font-size: 30px;
+    font-weight: 500;
+    border: 1px solid #A3A3A3;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: white;
+    width: 45%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.method {
+    border: 1px soild green;
+    background: light-green;
+  }
+
+.Pay-info {
+
+}
+
+.Pay-info-top {
+    align-items: center;
+    display: flex;
+    margin-top: 1%;
+}
+
+.Pay-info-title {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 7%;
+    font-weight: bold;
+}
+
+.Pay-info-again {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 1%;
+    color: #494848;
+}
+
+.Pay-info-bottom {
+    align-items: center;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: space-between;
+}
+
+.Pay-info-name {
+}
+
+.Pay-info-nametag {
+    font-size: 24px;
+    text-align: left;
+}
+
+.Pay-info-nameinput {
+    border: 1px solid #A3A3A3;
+    width: 350px;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.Pay-info-number {
+
+}
+
+.Pay-info-numbertag {
+    font-size: 24px;
+    margin-left: 0;
+    text-align: left;
+}
+
+.Pay-info-numberinput {
+    border: 1px solid #A3A3A3;
+    width: 350px;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.Pay-balance {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #D3DAD3;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+.Pay-balance-ment {
+    font-size: 40px;
+    font-weight: 700;
+    padding-left: 5%;
+}
+
+.Pay-balance-money {
+    font-size: 40px;
+    font-weight: 700;
+    padding-right: 5%;
+}
+
+.Pay-pay {
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #128100;
+    color: white;
+    border: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}

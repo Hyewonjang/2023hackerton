@@ -1,13 +1,14 @@
-import "../assets/css/styles.css";
+import "../../assets/css/styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../assets/css/LineIcons.3.0.css";
+import "../../assets/css/LineIcons.3.0.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import "../assets/js/datatables-simple-demo.js";
+import "../../assets/js/datatables-simple-demo.js";
 import {DataTable} from "simple-datatables"
 import { useState, useEffect } from "react";
 import PurchaseDataTd from "./PurchaseDataTd";
 import { useLocation, Link, useParams, useNavigate } from "react-router-dom";
 import AddPurchaseData from "./AddPurchaseData";
+import PurchaseData from "../../data/purchaseDataList.json";
 
 
 function PurchaseHistoryList(props,){
@@ -56,8 +57,21 @@ function PurchaseHistoryList(props,){
     //             반품
     //     </button>                                            
     // </td>;
+    const location = useLocation();
+    const name = location.state.name;
+    const phone = location.state.phone;
+    const restMoney = location.state.restMoney;
+    const cusIndex = location.state.index;
 
-    const [dummyPurchaseData, updateDummyPurchaseData] = useState([
+    const choicedCustomerBuyData = PurchaseData.PurchaseData.filter(data=>data.name == name);
+    const [dummyPurchaseData, updateDummyPurchaseData] = useState(localStorage.getItem(name+"BuyData") != undefined ? JSON.parse(localStorage.getItem(name+"BuyData")):choicedCustomerBuyData[0].buyList);
+
+    useEffect(()=>{
+        const JsonCusData = JSON.stringify(dummyPurchaseData);
+        localStorage.setItem(name+"BuyData", JsonCusData);
+    },[dummyPurchaseData]);
+
+    /* [
         ['2021-01-01', '중년여성 양말 세트', '서울시 OO구 OO로 11', 100000, '결제완료','구매완료'],
         ['2021-02-01', '중년 남성 조끼', '서울시 OO구 OO로 11', 50000, '결제완료','구매완료'],
         ['2021-03-01', '중장년 수면 바지', '서울시 xx구 OO로 23', 20000, '결제완료','구매완료'],
@@ -71,8 +85,9 @@ function PurchaseHistoryList(props,){
         ['2023-04-01', '미끄럼방지 매트 10매', '서울시 OO구 OO로 11', 28000, '결제완료','구매완료'],
         ['2023-06-01', '폴라폴리스 무릎 담요', '서울시 OO구 OO로 11', 9000, '결제완료','구매완료'],
         ['2023-08-01', '고탄력 손목보호대 ', '서울시 OO구 xx로 88', 8000, '결제미완','구매중'],
-    ]);
-    const dummyColumns = ["구매일자", "상품명", "배송지", "결제액", "결제상태","구매대행", "교환/환불"];
+    ] */
+
+    const dummyColumns = ["구매번호","구매일자", "상품명", "배송지", "결제액", "결제상태","구매대행", "교환/환불"];
 
     const [purchaseDate, setPurchaseDate] = useState(0);
     const [product, setProduct] = useState();
@@ -82,7 +97,6 @@ function PurchaseHistoryList(props,){
     const [insPurState, setInsPurState] = useState("구매대행상태");
     const [setDone, setSetDone] = useState(0);
 
-    const location = useLocation();
     const [updateDone, setUpdateDone] = useState(0);
     // const PdSingleData = location.state;
     // // useEffect(()=>{
@@ -107,10 +121,6 @@ function PurchaseHistoryList(props,){
 
     //console.log(dummyPurchaseData);
 
-    const name = location.state.name;
-    const phone = location.state.phone;
-    const restMoney = location.state.restMoney;
-
     useEffect(() => {
         const simpleDatatables = new DataTable('#datatablesSimple', {scrollY:"400px", paging: false, sortable:false});
     });
@@ -132,6 +142,12 @@ function PurchaseHistoryList(props,){
         }
     };
 
+    useEffect(()=>{
+        const storedCusData = JSON.parse(localStorage.getItem("CustomerData"));
+        storedCusData.splice(cusIndex, 1, storedCusData[cusIndex].slice(0,3).concat(restRefundMoney));
+        const JsonCusData = JSON.stringify(storedCusData);
+        localStorage.setItem("CustomerData", JsonCusData);
+    },[restRefundMoney]);
 
     return(
         <div className="container-fluid px-4">
@@ -180,7 +196,8 @@ function PurchaseHistoryList(props,){
                             </tr>
                         </tfoot>
                         <tbody>
-                            {dummyPurchaseData.reverse().map((data, index)=>{
+                            {dummyPurchaseData.map((data, index)=>{
+                                console.log(index,data);
                                 return(
                                     <PurchaseDataTd key={index} index={index} data={data} refundMoney={restRefundMoney} setRefundMoney={setRestRefundMoney} dummyPurchaseData={dummyPurchaseData} updateDummyPurchaseData={updateDummyPurchaseData}/>
                                 );

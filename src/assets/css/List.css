@@ -1,0 +1,36 @@
+.List-card {
+    margin-top: 2%;
+}
+
+.List-box {
+    border-bottom: 1px solid #D9D9D9;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 1%;
+}
+
+.List-title{
+    text-align: left;
+    margin-left: 3%;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.List-bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.List-amount {
+    font-size: 24px;
+}
+
+.List-date {
+    font-size: 24px;
+    color: #6F6F6F;
+}

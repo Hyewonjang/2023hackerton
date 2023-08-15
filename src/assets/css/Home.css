@@ -1,0 +1,80 @@
+.Home {
+    text-align: center;
+  }
+  
+  .Home-header {
+    height: 8%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    font-size: 50px;
+    font-weight: 600;
+    background-color: #B2C3B2;
+    color: black;
+  }
+  
+  .Home-line {
+    margin-top: 2%;
+    margin-right: 7%;
+    margin-left: 7%;
+  }
+  
+  .Home-menu {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    margin-top: 5%;
+  }
+  
+  .Home-menu1 {
+    background-color: #B2C3B2;
+    border-radius: 50%;
+    width: 25%;
+    height: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 120px;
+    padding-bottom: 190px;
+    cursor: pointer;
+  }
+  
+  .Home-menu2 {
+    background-color: #78B778;
+    border-radius: 50%;
+    width: 25%;
+    height: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 120px;
+    padding-bottom: 190px;
+    cursor: pointer;
+  }
+  
+  .Home-menu2:hover, .Home-menu3:hover{
+    color:black;
+  }
+
+  .Home-menu3 {
+    background-color: #058B05;
+    border-radius: 50%;
+    width: 25%;
+    height: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 120px;
+    padding-bottom: 190px;
+    cursor: pointer;
+  }
+  
+  .Home-bottom {
+    height: 10%;
+    margin-top: 7%;
+    border: 15px solid #B2C3B2;
+  }
+  
+  .Home-blogo {
+    font-size: 30px;
+    margin-left: 80%;
+    margin-top: 1%;
+  }

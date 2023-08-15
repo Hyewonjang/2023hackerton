@@ -1,0 +1,103 @@
+.header {
+    margin: 30px;
+}
+
+.user_info{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 2px solid #DDDDDD;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 3px #DDDDDD;
+    width: 95%;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 18px; 
+}
+
+.ps{
+    margin: 5px 18px;
+    line-height: 2;
+}
+
+.left{
+    width: 45%;
+    float: left;
+    margin-bottom: 60px;
+}
+
+.detail_img{
+    margin: 30px auto auto auto;
+    display: block;
+    border: 2px solid black;
+    width: 75%;
+    height: 75%;
+}
+
+.right{
+    width: 55%;
+    float: right;
+    padding-right: 5%;
+    margin-bottom: 60px;
+}
+
+.buyBtn {
+    background-color: #B2C3B2;
+    border-radius: 5px;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    transition: .3s ease;
+}
+
+.buyBtn:hover{
+    background-color: #668066;
+    transition: .3s ease;
+}
+
+.visitBtn {
+    background-color: #2E4E31;
+    border-radius: 5px;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    transition: .3s ease;
+}
+
+.visitBtnWhite {
+    color: whitesmoke;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.label {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.color_code {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    text-align: center;
+}

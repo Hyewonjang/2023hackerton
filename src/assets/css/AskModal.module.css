@@ -1,0 +1,26 @@
+.btn, .btn:link, .btn:visited, .btn:hover, .btn:active {
+    float: right;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    background-color:#2E4E31;
+    padding: 15px 30px;
+    border: 0px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.okaybtn, .okaybtn:link, .okaybtn:visited, .okaybtn:hover, .okaybtn:active {
+    background-color:#2E4E31;
+    padding: 6px 20px;
+    border: 0px;
+    font-size: 20px;
+}
+
+.modal_title{
+    font-size: 28px;
+}
+
+.modal_body{
+    font-size: 23px;
+    text-align: center;
+}

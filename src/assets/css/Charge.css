@@ -1,0 +1,89 @@
+.Ch-header {
+    height: 8%;
+    margin-top: 2%;
+    font-size: 50px;
+    color: black;
+    text-align: left;
+    margin-left: 5%;
+    cursor: pointer;
+  }
+
+.Ch-topbox {
+    background-color: #2E4E31;
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.Ch-back {
+    margin-top: 2%;
+    text-align: left;
+    cursor: pointer;
+    margin-right: 90%;
+    margin-left: 5%;
+    border: 1px solid #A3A3A3;
+    background-color: #B2C3B2;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 15px;
+}
+
+.Ch-middlebox {
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 2%;
+    border-radius: 5px;
+    padding: 3%;
+    background-color: #D3DAD3;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Ch-balance {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Ch-money {
+    margin-top: 3%;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Ch-button {
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #2E4E31;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.Ch-boundary {
+    height: 10%;
+    margin-top: 3%;
+    border: 15px solid #F5F5F5;
+}
+
+.Ch-bottom {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 2%;
+    text-align: left;
+    margin-left: 5%;
+}

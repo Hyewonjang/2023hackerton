@@ -1,0 +1,48 @@
+{
+    "md": {
+        "clothes": [
+            {
+                "id": 123,
+                "img": "https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/455d/c29e52ec3029bf9b0365bfafe6744413783745530407bbb29275e35e5706.jpg",
+                "color": "Pink, Red, Green",
+                "title": "여성 봄가을 니트 조끼1",
+                "price": 10000
+            },
+            {
+                "id": 234,
+                "img": "https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/0f9c/5bcf3409009a52574d03ab5cbc236203486c878eb52d350a3ae785e24b66.jpg",
+                "color": "Blue",
+                "title": "남성 여름 잠옷1",
+                "price": 5000
+            },
+            {
+                "id": 345,
+                "img": "https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/c5c5/afe7db8b6df52393211b9b73381aa48e68439f49defa63c08759832dc8fb.jpg",
+                "color": "Black, Grey",
+                "title": "남성 면바지1",
+                "price": 20000
+            },
+            {
+                "id": 456,
+                "img": "https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/455d/c29e52ec3029bf9b0365bfafe6744413783745530407bbb29275e35e5706.jpg",
+                "color": "Pink, Red, Green",
+                "title": "여성 봄가을 니트 조끼2",
+                "price": 10000
+            },
+            {
+                "id": 567,
+                "img": "https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/0f9c/5bcf3409009a52574d03ab5cbc236203486c878eb52d350a3ae785e24b66.jpg",
+                "color": "Blue",
+                "title": "남성 여름 잠옷2",
+                "price": 5000
+            },
+            {
+                "id": 678,
+                "img": "https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/c5c5/afe7db8b6df52393211b9b73381aa48e68439f49defa63c08759832dc8fb.jpg",
+                "color": "Black, Grey",
+                "title": "남성 면바지2",
+                "price": 20000
+            }
+        ]
+    }
+}

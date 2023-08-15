@@ -1,8 +1,9 @@
-import "../assets/css/styles.css";
+import "../../assets/css/styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../assets/css/LineIcons.3.0.css";
+import "../../assets/css/LineIcons.3.0.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import logo from '../assets/img/logo.png';
+import "../../assets/js/datatables-simple-demo.js";
+import logo from '../../assets/img/logo.png';
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -35,7 +36,7 @@ function AdminNavbar(props){
              <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
                 {/* Navbar Brand */}
                 <img src={logo} style={{width:"50px", height:'50px', marginLeft:'10px'}}/>
-                <Link className="navbar-brand ps-2" to="/" style={{padding: "0px", textAlign:'left', width:'175px'}}>Management</Link>
+                <Link className="navbar-brand ps-2" to="/admin" style={{padding: "0px", textAlign:'left', width:'175px'}}>Management</Link>
                 {/* Sidebar Toggle */}
                 <button className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" onClick={()=>{AdminNavbarDisplay()}}><i className="fas fa-bars"></i></button>
                 {/* Navbar Search */}

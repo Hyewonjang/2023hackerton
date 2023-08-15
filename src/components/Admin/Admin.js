@@ -1,7 +1,8 @@
-import "../assets/css/styles.css";
+import "../../assets/css/styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../assets/css/LineIcons.3.0.css";
+import "../../assets/css/LineIcons.3.0.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import "../../assets/js/datatables-simple-demo.js";
 import AdminNavbar from "./Admin_Navbar";
 import CustomerList from "./CustomerList";
 import Footer from "./Footer";
@@ -17,10 +18,10 @@ import { BrowserRouter, Routes, Route, Switch } from 'react-router-dom';
 
 
 function Admin(){
-    const [navbarDisplay, setNavbarDisplay] = useState(0);
+    const [navbarDisplay, setNavbarDisplay] = useState(1);
 
     return(
-        <BrowserRouter>
+        // <BrowserRouter>
         <div>
            <AdminNavbar navbarDisplay={navbarDisplay} setNavbarDisplay={setNavbarDisplay}/>
            <div id="layoutSidenav">
@@ -34,13 +35,12 @@ function Admin(){
                             <Route path="/addcustomerdata/:id" element={<AddCustomerData/>}></Route>
                             <Route path="/addpurchasedata/:id" element={<AddPurchaseData/>}></Route>
                         </Routes>
-                        
                     </main>
                     <Footer/>
                 </div>
             </div>
         </div>
-        </BrowserRouter>
+        // </BrowserRouter>
     )
 };
 

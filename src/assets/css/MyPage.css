@@ -1,0 +1,109 @@
+.My-header {
+    height: 8%;
+    margin-top: 2%;
+    font-size: 50px;
+    color: black;
+    text-align: left;
+    margin-left: 5%;
+    cursor: pointer;
+  }
+
+.My-back {
+    margin-top: 2%;
+    text-align: left;
+    cursor: pointer;
+    margin-right: 90%;
+    margin-left: 5%;
+    border: 1px solid #A3A3A3;
+    background-color: #B2C3B2;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 15px;
+}
+
+.My-topbox {
+    background-color: #2E4E31;
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.My-profile {
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 2%;
+    box-shadow: 2px 2px 2px 2px gray;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.My-topinside {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.My-name {
+    font-size: 30px;
+}
+
+.My-edit {
+    font-size: 20px;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #A3A3A3;
+    background-color: #B2C3B2;
+}
+
+.My-phone {
+    margin-top: 3%;
+    font-size: 25px;
+}
+
+.My-address {
+    margin-top: 1%;
+    font-size: 25px;
+}
+
+.My-charge {
+    background-color: #7CA37C;
+    margin-top: 3%;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.My-list {
+    background-color: #7CA37C;
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.My-list:hover{
+    color:black;
+}

@@ -1,8 +1,8 @@
-import "../assets/css/styles.css";
+import "../../assets/css/styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../assets/css/LineIcons.3.0.css";
+import "../../assets/css/LineIcons.3.0.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import "../assets/js/datatables-simple-demo.js";
+import "../../assets/js/datatables-simple-demo.js";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
